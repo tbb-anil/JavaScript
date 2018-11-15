@@ -14,6 +14,14 @@ document.querySelector('.btn-roll').addEventListener('click',function () {
 
 //    update the score
 
+
+
+
+//         if (dice === 6 && lastDice === 6) {
+//            scores[activePlayer] = 0;
+//             document.querySelector('#score-' + activePlayer).textContent = '0';
+//
+//         }
         if (dice1 !== 1 && dice2 !== 1){
             //add score
             roundScore += dice1 + dice2;
@@ -22,23 +30,8 @@ document.querySelector('.btn-roll').addEventListener('click',function () {
             nextPlayer();
 
         }
-
-
-//         if (dice === 6 && lastDice === 6) {
-//            scores[activePlayer] = 0;
-//             document.querySelector('#score-' + activePlayer).textContent = '0';
-//
-//         }
-//         else if (dice !== 1){
-//             //add score
-//             roundScore += dice;
-//             document.querySelector('#current-' + activePlayer).textContent = dice;
-//         }    else    {
-//             nextPlayer();
-//
-//         }
 //         lastDice= dice;
-//     }
+    }
 });
 document.querySelector('.btn-hold').addEventListener('click',function () {
     if (gamePlaying){
